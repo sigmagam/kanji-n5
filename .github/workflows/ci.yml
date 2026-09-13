@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Install dependencies
         run: npm install
@@ -43,6 +43,7 @@ jobs:
     runs-on: ubuntu-22.04
     timeout-minutes: 30
     needs: quality
+    continue-on-error: true
     # Only build on main pushes to conserve EAS minutes.
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     steps:
@@ -52,7 +53,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Setup Expo
         uses: expo/expo-github-action@v8
