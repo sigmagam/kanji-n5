@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: 20
           cache: npm
-      - run: npm ci
+      - run: npm install
       - run: npm run validate:dataset
       - run: npm run validate:project
       - run: npm run typecheck
