@@ -1,7 +1,7 @@
 /**
  * Daily learning — today's batch toward the daily goal.
  */
-import React, { useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import { View, StyleSheet, FlatList, Pressable } from 'react-native';
 import { router } from 'expo-router';
 import { ThemedText, Header, Card, Stat } from '../components/ui';
@@ -12,7 +12,7 @@ import { useProgress } from '../context/ProgressContext';
 
 export default function Daily() {
   const kanji = useKanjiData();
-  const { progress, recordStudy } = useProgress();
+  const { progress } = useProgress();
 
   // Today's batch: next unlearned kanji up to daily goal, plus review.
   const batch = useMemo(() => {

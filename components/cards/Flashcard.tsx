@@ -3,7 +3,7 @@
  * Uses react-native-reanimated for smooth 3D flip.
  */
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { StyleSheet, View, Pressable } from 'react-native';
 import Animated, {
   useSharedValue,
@@ -13,7 +13,7 @@ import Animated, {
   Easing,
 } from 'react-native-reanimated';
 import { ThemedText } from '../ui/ThemedText';
-import { colors, radius, spacing, typography } from '../../constants/theme';
+import { colors, radius, spacing } from '../../constants/theme';
 import { useHaptics } from '../../hooks/useHaptics';
 import type { Kanji } from '../../types';
 

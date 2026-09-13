@@ -1,11 +1,11 @@
 /**
  * Writing practice — pick a kanji, see stroke order animation.
  */
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { View, StyleSheet, FlatList, Pressable } from 'react-native';
 import { ThemedText, Header, Card } from '../../components/ui';
 import { StrokeOrderView, KanjiCell } from '../../components/kanji';
-import { colors, spacing, radius } from '../../constants/theme';
+import { colors, spacing } from '../../constants/theme';
 import { useKanjiData } from '../../hooks/useKanjiData';
 import type { Kanji } from '../../types';
 

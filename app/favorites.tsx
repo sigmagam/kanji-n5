@@ -1,7 +1,6 @@
 /**
  * Favorites — saved kanji.
  */
-import React from 'react';
 import { View, StyleSheet, FlatList } from 'react-native';
 import { router } from 'expo-router';
 import { ThemedText, Header } from '../components/ui';

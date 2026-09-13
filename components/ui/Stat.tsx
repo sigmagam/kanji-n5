@@ -1,7 +1,6 @@
 /**
  * Stat — compact stat display (label + value).
  */
-import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { ThemedText } from './ThemedText';
 import { colors, radius, spacing } from '../../constants/theme';

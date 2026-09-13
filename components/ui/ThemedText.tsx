@@ -1,7 +1,7 @@
 /**
  * ThemedText — typographic component.
  */
-import React from 'react';
+import type { ReactNode } from 'react';
 import { Text, TextProps, StyleSheet } from 'react-native';
 import { colors, typography } from '../../constants/theme';
 
@@ -9,7 +9,7 @@ interface ThemedTextProps extends TextProps {
   variant?: keyof typeof typography;
   inkSoft?: boolean;
   inverted?: boolean;
-  children?: React.ReactNode;
+  children?: ReactNode;
 }
 
 export function ThemedText({ variant = 'body', inkSoft, inverted, style, ...rest }: ThemedTextProps) {

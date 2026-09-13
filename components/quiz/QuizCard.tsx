@@ -1,7 +1,6 @@
 /**
  * QuizCard — displays a question with four options.
  */
-import React from 'react';
 import { StyleSheet, View, Pressable } from 'react-native';
 import { ThemedText } from '../ui/ThemedText';
 import { colors, radius, spacing } from '../../constants/theme';

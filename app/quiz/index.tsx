@@ -1,7 +1,6 @@
 /**
  * Quiz mode selector.
  */
-import React from 'react';
 import { View, StyleSheet, Pressable, ScrollView } from 'react-native';
 import { router } from 'expo-router';
 import { ThemedText, Header } from '../../components/ui';

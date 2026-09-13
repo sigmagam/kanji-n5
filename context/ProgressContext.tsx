@@ -3,7 +3,8 @@
  * Uses AsyncStorage. No cloud, no login, no network required.
  */
 
-import React, { createContext, useContext, useEffect, useState, useCallback } from 'react';
+import { createContext, useContext, useEffect, useState, useCallback } from 'react';
+import type { ReactNode } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import type { UserProgress, QuizResult, ReviewHistoryEntry } from '../types';
 
@@ -57,7 +58,7 @@ function daysBetween(a: string, b: string): number {
   return Math.round((db - da) / 86400000);
 }
 
-export function ProgressProvider({ children }: { children: React.ReactNode }) {
+export function ProgressProvider({ children }: { children: ReactNode }) {
   const [progress, setProgress] = useState<UserProgress>(defaultProgress);
   const [ready, setReady] = useState(false);
 

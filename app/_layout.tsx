@@ -2,7 +2,6 @@
  * Root layout — wraps the app in the ProgressProvider, SafeArea, and StatusBar.
  * Screens are file-based; explicit Screen declarations set header titles.
  */
-import React from 'react';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';

@@ -1,7 +1,7 @@
 /**
  * Onboarding — introduces the app, sets daily goal, marks complete.
  */
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { View, StyleSheet, Pressable, ScrollView } from 'react-native';
 import { router } from 'expo-router';
 import { ThemedText, Card } from '../components/ui';

@@ -1,10 +1,10 @@
 /**
  * Flashcard learning — swipe through kanji, flip, favorite, mark mastered.
  */
-import React, { useState, useMemo, useCallback } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import { View, StyleSheet, Pressable } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
-import { ThemedText, Card } from '../../components/ui';
+import { ThemedText } from '../../components/ui';
 import { Flashcard } from '../../components/cards';
 import { colors, spacing, radius } from '../../constants/theme';
 import { useKanjiData } from '../../hooks/useKanjiData';

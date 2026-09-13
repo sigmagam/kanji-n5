@@ -1,8 +1,8 @@
 /**
  * Quiz review — shows kanji that were answered wrong.
  */
-import React, { useMemo } from 'react';
-import { View, StyleSheet, FlatList, Pressable } from 'react-native';
+import { useMemo } from 'react';
+import { View, StyleSheet, FlatList } from 'react-native';
 import { useLocalSearchParams, router } from 'expo-router';
 import { ThemedText, Header } from '../../components/ui';
 import { KanjiCell } from '../../components/kanji';

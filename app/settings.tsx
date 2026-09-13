@@ -1,7 +1,7 @@
 /**
  * Settings — daily goal, language, haptics, reset.
  */
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { View, StyleSheet, Pressable, Alert, ScrollView, Switch } from 'react-native';
 import { router } from 'expo-router';
 import { ThemedText, Header, Card } from '../components/ui';

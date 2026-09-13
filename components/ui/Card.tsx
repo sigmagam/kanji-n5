@@ -1,12 +1,12 @@
 /**
  * Card — surface container with border + radius.
  */
-import React from 'react';
+import type { ReactNode } from 'react';
 import { View, StyleSheet, ViewStyle } from 'react-native';
 import { colors, radius, spacing } from '../../constants/theme';
 
 interface CardProps {
-  children: React.ReactNode;
+  children: ReactNode;
   style?: ViewStyle;
   padded?: boolean;
 }

@@ -1,7 +1,7 @@
 /**
  * Quiz play — presents questions, scores, stores result.
  */
-import React, { useState, useMemo } from 'react';
+import { useState } from 'react';
 import { View, StyleSheet, Pressable } from 'react-native';
 import { useLocalSearchParams, router } from 'expo-router';
 import { ThemedText } from '../../components/ui';

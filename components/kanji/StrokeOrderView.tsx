@@ -6,7 +6,7 @@
  * we only show numbered cells for the verified stroke count, with no paths.
  */
 
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { View, StyleSheet, Pressable } from 'react-native';
 import Svg, { Path, Rect, Text as SvgText } from 'react-native-svg';
 import { ThemedText } from '../ui/ThemedText';

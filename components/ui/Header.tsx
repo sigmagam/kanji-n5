@@ -1,7 +1,7 @@
 /**
  * Header — screen title with optional subtitle.
  */
-import React from 'react';
+import type { ReactNode } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { ThemedText } from './ThemedText';
 import { spacing } from '../../constants/theme';
@@ -9,7 +9,7 @@ import { spacing } from '../../constants/theme';
 interface HeaderProps {
   title: string;
   subtitle?: string;
-  right?: React.ReactNode;
+  right?: ReactNode;
 }
 
 export function Header({ title, subtitle, right }: HeaderProps) {

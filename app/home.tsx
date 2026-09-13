@@ -1,7 +1,6 @@
 /**
  * Home dashboard — primary hub. Quick stats + entry points to all features.
  */
-import React from 'react';
 import { View, StyleSheet, ScrollView, Pressable } from 'react-native';
 import { router } from 'expo-router';
 import { ThemedText, Header, Stat, Card } from '../components/ui';

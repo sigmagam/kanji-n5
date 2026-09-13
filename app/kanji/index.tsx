@@ -1,10 +1,10 @@
 /**
  * Kanji library — browse all kanji, filter by category, search.
  */
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { View, StyleSheet, FlatList, TextInput, Pressable, ScrollView } from 'react-native';
 import { router } from 'expo-router';
-import { ThemedText, Header, Card } from '../../components/ui';
+import { ThemedText, Header } from '../../components/ui';
 import { KanjiCell } from '../../components/kanji';
 import { colors, spacing, radius } from '../../constants/theme';
 import { useKanjiData, useKanjiCategories } from '../../hooks/useKanjiData';

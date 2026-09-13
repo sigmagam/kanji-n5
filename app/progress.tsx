@@ -1,10 +1,10 @@
 /**
  * Progress dashboard — stats, streak, quiz history, mastery by category.
  */
-import React, { useMemo } from 'react';
+import { useMemo } from 'react';
 import { View, StyleSheet, ScrollView } from 'react-native';
 import { ThemedText, Header, Card, Stat } from '../components/ui';
-import { colors, spacing, radius } from '../constants/theme';
+import { colors, spacing } from '../constants/theme';
 import { useKanjiData, useKanjiByCategory } from '../hooks/useKanjiData';
 import { useProgress } from '../context/ProgressContext';
 

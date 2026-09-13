@@ -1,8 +1,7 @@
 /**
  * About — app info, dataset sourcing, verification notes.
  */
-import React from 'react';
-import { ScrollView, StyleSheet, Linking, Pressable } from 'react-native';
+import { ScrollView, StyleSheet } from 'react-native';
 import { ThemedText, Header, Card } from '../components/ui';
 import { colors, spacing } from '../constants/theme';
 import { useKanjiData } from '../hooks/useKanjiData';

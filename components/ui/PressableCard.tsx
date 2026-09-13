@@ -1,12 +1,12 @@
 /**
  * PressableCard — tappable card with subtle press feedback.
  */
-import React from 'react';
+import type { ReactNode } from 'react';
 import { Pressable, StyleSheet, ViewStyle } from 'react-native';
 import { colors, radius, spacing } from '../../constants/theme';
 
 interface PressableCardProps {
-  children: React.ReactNode;
+  children: ReactNode;
   onPress: () => void;
   style?: ViewStyle;
   disabled?: boolean;

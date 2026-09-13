@@ -1,17 +1,14 @@
 /**
  * Entry route — shows splash while loading, then routes to onboarding or home.
  */
-import React from 'react';
 import { View, StyleSheet, ActivityIndicator } from 'react-native';
 import { Redirect } from 'expo-router';
 import { ThemedText } from '../components/ui/ThemedText';
 import { colors, spacing } from '../constants/theme';
 import { useProgress } from '../context/ProgressContext';
-import { useKanjiData } from '../hooks/useKanjiData';
 
 export default function Index() {
   const { ready, progress } = useProgress();
-  const kanji = useKanjiData();
 
   if (!ready) {
     return (

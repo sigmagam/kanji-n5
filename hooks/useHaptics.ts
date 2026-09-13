@@ -11,12 +11,13 @@ export function useHaptics() {
   return useCallback((style: 'light' | 'medium' | 'heavy' = 'light') => {
     if (!enabled) return;
     try {
-      const kind =
-        style === 'heavy' ? Haptics.NotificationFeedbackType.Warning :
-        style === 'medium' ? Haptics.ImpactFeedbackStyle.Medium :
-        Haptics.ImpactFeedbackStyle.Light;
-      if (style === 'heavy') Haptics.notificationAsync(kind);
-      else Haptics.impactAsync(kind);
+      if (style === 'heavy') {
+        Haptics.notificationAsync(Haptics.NotificationFeedbackType.Warning);
+      } else if (style === 'medium') {
+        Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
+      } else {
+        Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+      }
     } catch {
       // no-op — haptics may be unavailable
     }

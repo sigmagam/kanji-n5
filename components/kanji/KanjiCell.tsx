@@ -1,7 +1,6 @@
 /**
  * KanjiCell — compact kanji display cell (library list / grid).
  */
-import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { ThemedText } from '../ui/ThemedText';
 import { PressableCard } from '../ui/PressableCard';

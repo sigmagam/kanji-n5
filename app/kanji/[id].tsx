@@ -1,10 +1,9 @@
 /**
  * Kanji detail — full info for a single kanji with stroke order.
  */
-import React from 'react';
 import { View, StyleSheet, ScrollView, Pressable } from 'react-native';
 import { useLocalSearchParams, router } from 'expo-router';
-import { ThemedText, Card, Header } from '../../components/ui';
+import { ThemedText, Card } from '../../components/ui';
 import { StrokeOrderView } from '../../components/kanji';
 import { colors, spacing, radius } from '../../constants/theme';
 import { useKanjiById } from '../../hooks/useKanjiData';
