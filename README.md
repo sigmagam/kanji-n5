@@ -60,7 +60,26 @@ npm start
 
 **Prasyarat**: Node.js ≥ 18, Expo Go (di perangkat) atau Android Studio (untuk emulator).
 
-## 📦 Build APK
+## 📱 Unduh & Pasang APK (Android)
+
+### 📥 Download Langsung
+APK Android resmi yang siap di-install dapat diunduh langsung dari [**GitHub Releases**](https://github.com/sigmagam/kanji-n5/releases):
+- **Download:** `kanji-n5-v1.0.0.apk`
+- **Kompatibilitas:** Android 7.0 (Nougat) ke atas (API 24+)
+- **Sifat:** 100% Offline-first, tidak butuh backend VPS, tidak butuh koneksi internet.
+
+## 📦 Build APK Sendiri
+
+### 1. Build Otomatis via GitHub Actions (Rekomendasi)
+Setiap perubahan di branch `main` secara otomatis memicu GitHub Actions untuk:
+1. Validasi dataset & TypeScript check
+2. Menjalankan unit tests
+3. Meng-compile APK Android native menggunakan Gradle
+4. Mengunggah APK ke Artifacts dan GitHub Release
+
+Tidak membebani CPU/RAM VPS sama sekali karena proses build berjalan di GitHub Cloud Runner.
+
+### 2. EAS Build (Cloud Expo)
 
 ### Preview APK (untuk pengujian)
 
